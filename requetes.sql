@@ -23,7 +23,7 @@ SELECT TitreSerie FROM Serie WHERE producteur = 'Spielberg' ORDER BY annee DESC;
 SELECT TitreSerie FROM Serie WHERE PaysOrigine = 'USA' ORDER BY NombreSaison ASC;
 
 -- Quelle série a le plus d’épisodes ?
-SELECT TitreSerie FROM Serie ORDER BY NombreEpisode DESC LIMIT 1;
+SELECT TitreSerie FROM Serie ORDER BY NombreEpisode DESC;
 
 -- La série « Big Bang Theory » est-elle plus appréciée des hommes ou des femmes ?
 SELECT genre, COUNT(*) AS count FROM Serie WHERE TitreSerie = 'Big Bang Theory' GROUP BY genre;
